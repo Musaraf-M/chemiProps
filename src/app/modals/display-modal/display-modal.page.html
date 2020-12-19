@@ -1,0 +1,30 @@
+<ion-content scrollY="false">
+
+    <!--Back to home-->
+    <ion-row>
+        <ion-col>
+            <ion-fab (click)="close()">
+                <ion-icon class="backIcon" name="arrow-back-outline"></ion-icon>
+            </ion-fab>
+        </ion-col>
+    </ion-row>
+
+    <!--Element details-->
+    <ion-row>
+        <ion-card transparent="true" class="text">
+            <h1 class="elementSymbol"> {{this.symbol}} </h1>
+        </ion-card>
+        <div>
+            <h4 class="elementType">{{this.groupBlock}}</h4>
+            <h1 class='elementName'>{{this.name}}</h1>
+        </div>
+
+        <!--Element data-->
+    </ion-row>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste eveniet at aut sed ullam, porro, velit earum atque delectus totam incidunt eos doloremque dicta quibusdam iusto quae dolores alias reprehenderit facilis eligendi? Vero aliquid repellendus
+        hic natus? Consequuntur, blanditiis temporibus?</p>
+
+
+    <!--Drawer Component-->
+    <app-drawer (openStateChanged)="toggleBackdrop($event)" #drawer></app-drawer>
+</ion-content>

@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-button shape="round" fill="outline" color="danger" (click)="closeModal()">
+            <ion-icon slot="start" name="arrow-back-outline"></ion-icon>Back</ion-button>
+    </ion-toolbar>
+
+
+    <!-- Searchbar with danger color -->
+    <ion-searchbar color="danger" autocomplete="on" #search debounce="500" (ionChange)="_ionChange($event)"></ion-searchbar>
+
+</ion-header>
+<ion-content class="ion-padding">
+
+    <!-- Show Elements -->
+    <ion-list>
+        <ion-item>
+            <ion-label>
+                <ion-row>
+                    <ion-col>
+                        <h1>Name</h1>
+                    </ion-col>
+                    <ion-col>
+                        <h1>Symbol</h1>
+                    </ion-col>
+                    <ion-col>
+                        <h1>Atomic Mass</h1>
+                    </ion-col>
+                </ion-row>
+            </ion-label>
+        </ion-item>
+        <ion-item (click)="mouseClick(x.symbol,x.name,x.groupBlock)" *ngFor="let x of searchedItem">
+            <ion-label>
+                <ion-row>
+                    <ion-col>
+                        <h2>{{x.name}}</h2>
+                    </ion-col>
+                    <ion-col>
+                        <h3>{{x.symbol}}</h3>
+                    </ion-col>
+                    <ion-col>
+                        <h3>{{x.atomicMass}}</h3>
+                    </ion-col>
+                </ion-row>
+
+            </ion-label>
+        </ion-item>
+    </ion-list>
+</ion-content>

@@ -1,0 +1,163 @@
+<ion-content fullscreen>
+    <!-- Header logo button-->
+    <ion-header class="ion-no-border">
+        <ion-row>
+            <ion-col size="0.5"></ion-col>
+            <ion-col size="4.5">
+                <h2 class="cyso">CYSO_</h2>
+            </ion-col>
+            <ion-col size="4"></ion-col>
+            <ion-col size="1.5" class="search">
+                <ion-fab (click)="openModel()">
+                    <ion-icon name="search"></ion-icon>
+                </ion-fab>
+            </ion-col>
+            <ion-col size="1.5" class="vDot">
+                <ion-icon name="logo-stencil"></ion-icon>
+            </ion-col>
+        </ion-row>
+    </ion-header>
+
+    <!-- Chemical element title-->
+    <ion-row>
+        <ion-col size="0.5"></ion-col>
+        <ion-col>
+            <h1 id="chemical">Chemical</h1>
+            <h1 id="elements">elements</h1>
+        </ion-col>
+    </ion-row>
+
+    <!-- Responsive row-->
+    <ion-row>
+        <ion-col></ion-col>
+    </ion-row>
+
+    <!-- progress bar and content slide-->
+    <ion-row>
+        <ion-col size="2">
+            <h4 class="number">0{{currentSlide}}</h4>
+            <br>
+            <ion-progress-bar class="verticalrotate" value={{currentIndex}}></ion-progress-bar>
+            <br>
+            <h4 class="number2">0{{total}}</h4>
+        </ion-col>
+        <ion-col size="10">
+            <ion-slides [options]="slideOpts" #slides (ionSlideDidChange)="slideChanged(slides)">
+                <ion-slide *ngFor="let x of details" (click)="mouseClick(x.symbol,x.name,x.groupBlock)">
+                    <ion-card class="card1">
+                        <img class="bgPic" src="../../assets/2.jpg">
+                        <ion-card transparent="true" class="text">
+                            <h1 class="elementSymbol"> {{x.symbol}} </h1>
+                        </ion-card>
+                        <h4 class="elementType">{{x.groupBlock}}</h4>
+                        <h1 class='elementName'>{{x.name}}</h1>
+                    </ion-card>
+                </ion-slide>
+            </ion-slides>
+        </ion-col>
+    </ion-row>
+
+    <ion-footer class="ion-no-border">
+        <!-- Tab Section-->
+        <ion-tabs>
+            <ion-row class="tabSlide">
+                <ion-col size="2"></ion-col>
+                <ion-col size="10">
+                    <ion-slides [options]="tabSlides">
+                        <ion-slide>
+                            <ion-button class="card2" (click)="metal('alkali metal')">
+                                <ion-icon class="tabIcon" name="bonfire-outline"></ion-icon>
+                            </ion-button>
+                        </ion-slide>
+                        <ion-slide>
+                            <ion-button class="card2" (click)="metal('alkaline earth metal')">
+                                <ion-icon class="tabIcon" name="flame-outline"></ion-icon>
+                            </ion-button>
+                        </ion-slide>
+                        <ion-slide>
+                            <ion-button class="card2" (click)="metal('lanthanoid')">
+                                <ion-icon class="tabIcon" name="nuclear-outline"></ion-icon>
+                            </ion-button>
+                        </ion-slide>
+                        <ion-slide>
+                            <ion-button class="card2" (click)="metal('actinoid')">
+                                <ion-icon class="tabIcon" name="radio-outline"></ion-icon>
+                            </ion-button>
+                        </ion-slide>
+                        <ion-slide>
+                            <ion-button class="card2" (click)="metal('transition metal')">
+                                <ion-icon class="tabIcon" name="hammer-outline"></ion-icon>
+                            </ion-button>
+                        </ion-slide>
+                        <ion-slide>
+                            <ion-button class="card2" (click)="metal('metalloid')">
+                                <ion-icon class="tabIcon" name="help-buoy-outline"></ion-icon>
+                            </ion-button>
+                        </ion-slide>
+                        <ion-slide>
+                            <ion-button class="card2" (click)="metal('nonmetal')">
+                                <ion-icon class="tabIcon" name="earth-outline"></ion-icon>
+                            </ion-button>
+                        </ion-slide>
+                        <ion-slide>
+                            <ion-button class="card2" (click)="metal('noble gas')">
+                                <ion-icon class="tabIcon" name="logo-electron"></ion-icon>
+                            </ion-button>
+                        </ion-slide>
+                        <ion-slide class="tabIconName">
+                            <small>Alkali</small>
+                        </ion-slide>
+                        <ion-slide class="tabIconName">
+                            <small>Alkaline</small>
+                        </ion-slide>
+                        <ion-slide class="tabIconName">
+                            <small>Lanthanide</small>
+                        </ion-slide>
+                        <ion-slide class="tabIconName">
+                            <small>Actinide</small>
+                        </ion-slide>
+                        <ion-slide class="tabIconName">
+                            <small>Trans-Metal</small>
+                        </ion-slide>
+                        <ion-slide class="tabIconName">
+                            <small>Metelloide</small>
+                        </ion-slide>
+                        <ion-slide class="tabIconName">
+                            <small>Non-Metal</small>
+                        </ion-slide>
+                        <ion-slide class="tabIconName">
+                            <small>Nobal gas</small>
+                        </ion-slide>
+                    </ion-slides>
+
+                </ion-col>
+            </ion-row>
+        </ion-tabs>
+    </ion-footer>
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Condensed&display=swap');
+</style>

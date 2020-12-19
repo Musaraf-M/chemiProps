@@ -1,0 +1,8 @@
+{
+  "name": "chemical",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
