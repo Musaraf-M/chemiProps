@@ -3,7 +3,8 @@
     <!--Back to home-->
     <ion-row>
         <ion-col>
-            <ion-fab (click)="close()">
+            <ion-fab (click)="close()"class="ion-activatable ripple-parent">
+                <ion-ripple-effect type="unbounded"></ion-ripple-effect>
                 <ion-icon class="backIcon" name="arrow-back-outline"></ion-icon>
             </ion-fab>
         </ion-col>

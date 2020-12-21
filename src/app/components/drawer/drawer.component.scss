@@ -6,19 +6,13 @@
     bottom: calc(-77vh + env(safe-area-inset-bottom));
     height: 83vh;
     z-index: 11;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(245, 90, 90, 0.95);
 }
 
 .ion-text-center {
     text-align: center;
 }
 
-.uparrow {
-    text-align: center;
-    color: white;
-    font-size: 30px;
-    margin-left: 40px;
-}
 
 .content {
     margin-top: 50px;
@@ -28,7 +22,6 @@
     border-radius: 30px;
     height: 60px;
     width: 60px;
-    --background-activated: rgba(0, 0, 0, 0.8);
     --padding-start: 0px;
     --padding-end: 0px;
 }
@@ -39,4 +32,12 @@
 
 p {
     color: white;
+}
+
+ion-segemnt {
+    margin-top: 50px;
+}
+
+ion-label ion-icon {
+    color: blanchedalmond;
 }

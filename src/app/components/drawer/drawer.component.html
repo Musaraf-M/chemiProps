@@ -1,34 +1,32 @@
 <div class="drawer" #drawer>
 
-    <!--Top Arrow Icon -->
-    <ion-row>
-        <ion-col size="4"></ion-col>
-        <ion-col size="4">
-            <ion-fab (click)="toggleDrawer()">
-                <ion-icon class="uparrow" name="chevron-up-outline"></ion-icon>
-            </ion-fab>
-        </ion-col>
-        <ion-col size="4"></ion-col>
-    </ion-row>
-
-
 
     <!--Application Property Icon-->
-    <ion-row class="content">
+    <!-- <ion-row class="content">
         <ion-col size="1.5"></ion-col>
         <ion-col class="property">
-            <ion-button color="danger" fill="outline" class="application" (click)="property()">
+            <ion-button  class="application ion-focused" (click)="property()">
                 <ion-icon class="infinity" size="3" name="flower-outline"></ion-icon>
             </ion-button>
         </ion-col>
         <ion-col>
-            <ion-button color="danger" fill="outline" class="application" (click)="application()">
+            <ion-button class="application" (click)="application()">
                 <ion-icon class="infinity" size="3" name="infinite-outline"></ion-icon>
             </ion-button>
         </ion-col>
         <ion-col size="6"></ion-col>
-    </ion-row>
-
+    </ion-row> -->
+<br><br>
+<ion-segment color="light">
+    <ion-segment-button layout="icon-bottom" (click)="property()">
+        <ion-icon name="flower-outline"></ion-icon>
+        <ion-label>Property</ion-label>
+      </ion-segment-button>
+      <ion-segment-button layout="icon-bottom" (click)="application()">
+        <ion-icon name="infinite-outline"></ion-icon>
+        <ion-label>Application</ion-label>
+      </ion-segment-button>
+  </ion-segment>
 
     <!--Applicarion data-->
     <div *ngIf="value">

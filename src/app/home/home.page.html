@@ -10,7 +10,8 @@
             <ion-col size="1.5">
             </ion-col>
             <ion-col size="1.5" class="search">
-                <ion-fab (click)="openModel()">
+                <ion-fab (click)="openModel()"class="ion-activatable ripple-parent">
+                    <ion-ripple-effect type="unbounded"></ion-ripple-effect>
                     <ion-icon name="search"></ion-icon>
                 </ion-fab>
             </ion-col>
@@ -38,7 +39,8 @@
     <ion-row>
         <ion-col size="12">
             <ion-slides [options]="slideOpts">
-                <ion-slide *ngFor="let x of details" (click)="mouseClick(x.symbol,x.name,x.groupBlock)">
+                <ion-slide *ngFor="let x of details" (click)="mouseClick(x.symbol,x.name,x.groupBlock)" >
+                  
                     <ion-card class="card1">
                         <img class="bgPic" src="../../assets/2.jpg">
                         <ion-card transparent="true" class="text">

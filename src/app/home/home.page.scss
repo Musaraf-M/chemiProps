@@ -43,6 +43,7 @@ body {
     width: auto;
     box-shadow: 5px 5px 10px rgb(231, 64, 64);
     border-radius: 40px;
+    margin-bottom: 20px;
 }
 
 .text {
@@ -67,7 +68,7 @@ body {
 .elementType {
     font-size: 15px;
     position: absolute;
-    top: 260px;
+    top: 265px;
     left: 20px;
     color: #ffffff;
     font-weight: 500;
@@ -107,6 +108,7 @@ body {
 
 .card2 {
     border-radius: 20%;
+    margin-bottom: 10px;
     height: 60px;
     width: 60px;
     color: white;

@@ -16,7 +16,7 @@ export class HomePage {
   @ViewChild('slides', { static: true }) slides:IonSlides; 
 
   slideOpts = {
-    slidesPerView: 1.2,
+    slidesPerView: 1.3,
     initialSlide: -1,
     speed: 400, 
   };
