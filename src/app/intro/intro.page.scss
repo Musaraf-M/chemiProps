@@ -1,0 +1,72 @@
+ion-slides {
+    height: 100%;
+}
+
+.img-top {
+    margin-top: 20px;
+    height: 120px;
+    float: right;
+    margin-right: 20px;
+}
+
+.card1 {
+    background: #ff7272;
+    color: var(--ion-color-primary-contrast);
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+.title1 {
+    margin-top: 0px;
+    margin-left: 10px;
+    float: left;
+    font-family: 'Langar', cursive;
+    font-size: 40px;
+}
+
+.content1 {
+    margin-top: 20px;
+    margin-left: 10px;
+    float: left;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+}
+
+.img-middle {
+    left: 0;
+    width: 50%;
+    position:fixed;
+    bottom:50px;
+}
+
+.img-down {
+    left:50%;
+    position:fixed;
+    bottom:50px;
+}
+
+.card2 {
+    margin: 0px;
+    top: 0px !important;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background: rgba(255, 0, 0, 0);
+}
+
+h2 {
+    font-family: 'Langar', cursive;
+}
+
+.continue {
+    font-family: 'Langar', cursive;
+    float: right;
+    margin-top: 30px;
+}
+
+.img2 {
+    height: 100px;
+    margin-right: -100px;
+    transform: scaleX(-1);
+}

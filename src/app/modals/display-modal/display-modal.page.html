@@ -11,19 +11,35 @@
 
     <!--Element details-->
     <ion-row>
-        <ion-card transparent="true" class="text">
-            <h1 class="elementSymbol"> {{this.symbol}} </h1>
-        </ion-card>
-        <div>
+        <ion-col size="4">
+            <ion-card transparent="true" class="text">
+                <h1 class="elementSymbol"> {{this.symbol}} </h1>
+            </ion-card>
+        </ion-col>
+        <ion-col>
+            <img id="topImage" src="../../../assets/undraw_annotation_7das.svg">
+        </ion-col>
+    </ion-row>
+
+
+
+    <div>
+        <ion-card class="property">
             <h4 class="elementType">{{this.groupBlock}}</h4>
             <h1 class='elementName'>{{this.name}}</h1>
-        </div>
 
-        <!--Element data-->
-    </ion-row>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste eveniet at aut sed ullam, porro, velit earum atque delectus totam incidunt eos doloremque dicta quibusdam iusto quae dolores alias reprehenderit facilis eligendi? Vero aliquid repellendus
-        hic natus? Consequuntur, blanditiis temporibus?</p>
 
+            <!--Element data-->
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste eveniet at aut sed ullam, porro, velit
+                earum atque delectus totam incidunt eos doloremque dicta quibusdam iusto quae dolores alias
+                reprehenderit facilis eligendi? Vero aliquid repellendus
+                hic natus? Consequuntur, blanditiis temporibus?</p>
+        </ion-card>
+
+    </div>
+
+    <img id="bottomImage" src="../../../assets/undraw_pull_request_gld8.svg">
 
     <!--Drawer Component-->
     <app-drawer (openStateChanged)="toggleBackdrop($event)" #drawer></app-drawer>

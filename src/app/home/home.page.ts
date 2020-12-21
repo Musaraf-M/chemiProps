@@ -16,7 +16,7 @@ export class HomePage {
   @ViewChild('slides', { static: true }) slides:IonSlides; 
 
   slideOpts = {
-    slidesPerView: 1,
+    slidesPerView: 1.2,
     initialSlide: -1,
     speed: 400, 
   };
@@ -30,9 +30,6 @@ export class HomePage {
 
 
   data: any;
-  total:Number = 1;
-  currentIndex:Number = 0;
-  currentSlide:Number ;
   details: any ;
   constructor(public modalController: ModalController, private router: Router) {
     let fetchRes = fetch("../../assets/data.json"); 
@@ -45,24 +42,6 @@ export class HomePage {
   }
   
 ngOnInit(): void {
-    
-  }
-
-  slideChanged(slides: IonSlides) {
-    slides.length().then((total: number) => {
-      this.total = total;
-      console.log(this.total);
-      
-    });
-    slides.getActiveIndex().then((index: number) => {
-      this.currentSlide = index;
-     });
-     this.progress(this.currentSlide,this.total);
-  } 
-
-  progress(a,b){
-    this.currentIndex = a/b;
-    console.log(a);
     
   }
   

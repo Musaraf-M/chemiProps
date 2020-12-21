@@ -32,6 +32,10 @@ body {
     font-size: 60px;
 }
 
+.undraw{
+    margin-top: 25px;
+}
+
 .card1 {
     position: relative;
     margin-top: 30px;
@@ -107,8 +111,8 @@ body {
     width: 60px;
     color: white;
     font-weight: 300;
-    --background: rgb(255, 0, 0);
-    --background-activated: rgb(255, 0, 0);
+    --background: rgb(255, 61, 61);
+    --background-activated: rgb(255, 61, 61);
     --padding-start: 0px;
     --padding-end: 0px;
     box-shadow: 5px 10px 10px rgb(170, 170, 170);
