@@ -14,7 +14,7 @@ export class SearchModelPage implements OnInit {
   @ViewChild('search', { static: false }) search: IonSearchbar;
 
   data: any;
-  private searchedItem: any;
+  private searchedItem: any = [];
   list: any;
   constructor(public modalController: ModalController, private http: HttpClient, private router: Router) { }
 
@@ -47,9 +47,6 @@ export class SearchModelPage implements OnInit {
       this.searchedItem = this.searchedItem.filter((item: any) => {
         return (item.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
       })
-    }
-    if(this.searchedItem.length < 1){
-      this.data = true;
     }
     // this.search.getInputElement().then(item => console.log(item))
 

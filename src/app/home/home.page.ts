@@ -19,6 +19,10 @@ export class HomePage {
     slidesPerView: 1.3,
     initialSlide: -1,
     speed: 400, 
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'progressbar',
+    }
   };
 
   tabSlides = {

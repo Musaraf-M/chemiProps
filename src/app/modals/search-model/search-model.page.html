@@ -14,7 +14,7 @@
 
     <!-- Show Elements -->
     <ion-list>
-        <ion-item *ngIf="!data">
+        <ion-item *ngIf="searchedItem.length != 0">
             <ion-label>
                 <ion-row>
                     <ion-col>
@@ -47,13 +47,8 @@
             </ion-label>
         </ion-item>
     </ion-list>
-    <div *ngIf="data">
+    <div *ngIf="searchedItem.length == 0">
         <img src="../../../assets/undraw_Taken_re_yn20.svg" alt="">
         <h1 class="fun">Element not found on earth... <br> Try other planet</h1>
     </div>
 </ion-content>
-
-
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
-</style>

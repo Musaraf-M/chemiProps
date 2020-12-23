@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Storage } from '@ionic/storage';
-import { Router } from '@angular/router';
+import { Router, NavigationExtras } from '@angular/router';
 
 @Component({
   selector: 'app-intro',
@@ -19,7 +19,10 @@ export class IntroPage implements OnInit {
 
   async finish() {
     await this.storage.set('introComplete', true);
-    this.router.navigateByUrl('/');
+    let options: NavigationExtras = {
+      replaceUrl: true
+    };
+    this.router.navigate(['/'], options);
   }
   ngOnInit() {
   }
