@@ -33,9 +33,8 @@
         <ion-row>
             <ion-col size="1.5"></ion-col>
             <ion-col>
-                <p>Lorem ipsum, dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus animi, assumenda ipsa quod ipsam delectus voluptatem repellat sunt maiores officiis. consectetur adipisicing elit. Corporis laudantium repellat
-                    molestias saepe eligendi sed quam, voluptatem neque magnam quo similique qui consectetur aspernatur. Doloremque neque eius amet cumque obcaecati.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit perferendis aut modi voluptate dicta, iste quod error ipsa recusandae itaque.</p>
+                <div *ngFor="let x of app">
+                    <p>{{x}}</p></div>
             </ion-col>
             <ion-col size="1.5"></ion-col>
         </ion-row>
@@ -46,18 +45,8 @@
             <ion-row *ngFor="let x of details">
                 <ion-col size="1.5"></ion-col>
                 <ion-col>
-                    <p>Atomic Mass: {{x.atomicMass}}</p>
-                    <p>Atomic Number: {{x.atomicNumber}}</p>
-                    <p>Boiling Point: {{x.boilingPoint}}</p>
-                    <p>Bond Type: {{x.bondingType}}</p>
-                    <p>Density: {{x.density}}</p>
-                    <p>Electron Affinity: {{x.electronAffinity}}</p>
-                    <p>Electro Negativity: {{x.electronegativity}}</p>
-                    <p>Configuration: {{x.electronicConfiguration}}</p>
-                    <p>Ionization Energy: {{x.ionizationEnergy}}</p>
-                    <p>Melting Point: {{x.meltingPoint}}</p>
-                    <p>Oxidation States: {{x.oxidationStates}}</p>
-                    <p>Standard State: {{x.standardState}}</p>
+                    <p>{{x}}</p>
+                    
                 </ion-col>
                 <ion-col size="1.5"></ion-col>
             </ion-row>

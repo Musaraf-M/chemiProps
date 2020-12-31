@@ -4,7 +4,7 @@
         <ion-row>
             <ion-col size="0.5"></ion-col>
             <ion-col size="4.5">
-                <h2 class="cyso">CYSO_</h2>
+                <h2 class="cyso">CYSO_ </h2>
             </ion-col>
             <ion-col size="4"></ion-col>
             <ion-col size="1.5">
@@ -61,42 +61,42 @@
                 <ion-col size="12">
                     <ion-slides [options]="tabSlides">
                         <ion-slide>
-                            <ion-button class="card2" (click)="metal('alkali metal')">
+                            <ion-button class="card2" [ngClass]="{selected: value === '1'}" (click)="metal('alkali metal','1')">
                                 <ion-icon class="tabIcon" name="bonfire-outline"></ion-icon>
                             </ion-button>
                         </ion-slide>
                         <ion-slide>
-                            <ion-button class="card2" (click)="metal('alkaline earth metal')">
+                            <ion-button class="card2" [ngClass]="{selected: value === '2'}" (click)="metal('alkaline earth metal','2')">
                                 <ion-icon class="tabIcon" name="flame-outline"></ion-icon>
                             </ion-button>
                         </ion-slide>
                         <ion-slide>
-                            <ion-button class="card2" (click)="metal('lanthanoid')">
+                            <ion-button class="card2" [ngClass]="{selected: value === '3'}" (click)="metal('lanthanoid','3')">
                                 <ion-icon class="tabIcon" name="nuclear-outline"></ion-icon>
                             </ion-button>
                         </ion-slide>
                         <ion-slide>
-                            <ion-button class="card2" (click)="metal('actinoid')">
+                            <ion-button class="card2" [ngClass]="{selected: value === '4'}" (click)="metal('actinoid','4')">
                                 <ion-icon class="tabIcon" name="radio-outline"></ion-icon>
                             </ion-button>
                         </ion-slide>
                         <ion-slide>
-                            <ion-button class="card2" (click)="metal('transition metal')">
+                            <ion-button class="card2" [ngClass]="{selected: value === '5'}" (click)="metal('transition metal','5')">
                                 <ion-icon class="tabIcon" name="hammer-outline"></ion-icon>
                             </ion-button>
                         </ion-slide>
                         <ion-slide>
-                            <ion-button class="card2" (click)="metal('metalloid')">
+                            <ion-button class="card2" [ngClass]="{selected: value === '6'}" (click)="metal('metalloid','6')">
                                 <ion-icon class="tabIcon" name="help-buoy-outline"></ion-icon>
                             </ion-button>
                         </ion-slide>
                         <ion-slide>
-                            <ion-button class="card2" (click)="metal('nonmetal')">
+                            <ion-button class="card2" [ngClass]="{selected: value === '7'}" (click)="metal('nonmetal','7')">
                                 <ion-icon class="tabIcon" name="earth-outline"></ion-icon>
                             </ion-button>
                         </ion-slide>
                         <ion-slide>
-                            <ion-button class="card2" (click)="metal('noble gas')">
+                            <ion-button class="card2" [ngClass]="{selected: value === '8'}" (click)="metal('noble gas','8')">
                                 <ion-icon class="tabIcon" name="logo-electron"></ion-icon>
                             </ion-button>
                         </ion-slide>

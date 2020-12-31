@@ -1,6 +1,6 @@
 .cyso {
     margin: 20px 0px 10px;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Permanent Marker';
 }
 
 body {
@@ -19,14 +19,14 @@ body {
 }
 
 #chemical {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Condensed';
     font-size: 60px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
 #elements {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Condensed';
     font-weight: 900;
     margin-top: 0px;
     font-size: 60px;
@@ -121,6 +121,16 @@ body {
     box-shadow: 5px 10px 10px rgb(170, 170, 170);
 }
 
+.selected {
+    margin-bottom: 10px;
+    height: 70px;
+    width: 70px;
+}
+
+.card2 {
+    color: white;
+}
+
 .tabIconName {
     color: rgb(255, 0, 0);
     font-weight: 550;
@@ -132,4 +142,301 @@ ion-footer {
 
 .ion-activated {
     color: cadetblue;
+}
+
+
+
+/*==================================================
+                   Responsiveness
+===================================================*/
+/* Medium Devices (Landscape Tablets & Medium Desktops) */
+@media(min-width: 992px) and (max-width: 2000px){
+    .cyso{
+        font-size: 50px;
+    }
+
+    #chemical{
+        font-size: 90px;
+    }
+
+    #elements{
+        font-size: 90px;
+    }
+
+    .search{
+        font-size: 50px;
+    }
+
+    .undraw {
+        height: 200px;
+    }
+
+    .card1 {
+        height: 450px;
+    }
+
+    .bgPic {
+        height: 450px;
+    }
+
+    .text {
+        top: 260px;
+    }
+
+    .elementName {
+        top: 345px;
+        font-size: 45px;
+    }
+
+    .elementType {
+        top: 325px;
+        font-size: 25px;
+    }
+
+    .card2 {
+        width: 80px;
+        height: 80px;
+    }
+
+    .tabIcon {
+        font-size: 60px;
+    }
+
+    .tabIconName {
+        font-size: 40px;
+    }
+}
+
+/* Small Devices (Portrait Tablets & Small Desktops) */
+@media(min-width: 768px) and (max-width: 991px){
+    .cyso{
+        font-size: 40px;
+    }
+
+    #chemical{
+        font-size: 80px;
+    }
+
+    #elements{
+        font-size: 80px;
+    }
+
+    .search{
+        font-size: 40px;
+    }
+
+    .undraw {
+        height: 180px;
+    }
+
+    .card1 {
+        height: 450px;
+    }
+
+    .bgPic {
+        height: 450px;
+    }
+
+    .text {
+        top: 260px;
+    }
+
+    .elementName {
+        top: 345px;
+        font-size: 45px;
+    }
+
+    .elementType {
+        top: 325px;
+        font-size: 25px;
+    }
+
+    .card2 {
+        width: 80px;
+        height: 80px;
+    }
+
+    .tabIcon {
+        font-size: 40px;
+    }
+
+    .tabIconName {
+        font-size: 30px;
+    }
+}
+
+
+/* Extra Small Devices (Portrait Tablets & Landscape Phones) */
+@media(min-width: 550px) and (max-width: 767px){
+    .cyso{
+        font-size: 30px;
+    }
+
+    #chemical{
+        font-size: 60px;
+    }
+
+    #elements{
+        font-size: 60px;
+    }
+
+    .search{
+        font-size: 30px;
+    }
+
+    .undraw {
+        height: 140px;
+    }
+
+    .card1 {
+        height: 450px;
+    }
+
+    .bgPic {
+        height: 450px;
+    }
+
+    .text {
+        top: 260px;
+    }
+
+    .elementName {
+        top: 345px;
+        font-size: 45px;
+    }
+
+    .elementType {
+        top: 325px;
+        font-size: 25px;
+    }
+
+    .card2 {
+        width: 80px;
+        height: 80px;
+    }
+
+    .tabIcon {
+        font-size: 40px;
+    }
+
+    .tabIconName {
+        font-size: 30px;
+    }
+}
+
+/* Extra Small Devices (Portrait Phones & Smaller Devices) */
+@media(min-width: 360px) and (max-width:384px){
+    .cyso{
+        font-size: 20px;
+    }
+
+    #chemical{
+        font-size: 40px;
+    }
+
+    #elements{
+        font-size: 40px;
+    }
+
+    .search{
+        font-size: 20px;
+    }
+
+    .undraw {
+        height: 80px;
+    }
+
+    .card1 {
+        height: 250px;
+    }
+
+    .bgPic {
+        height: 250px;
+    }
+
+    .text {
+        top: 80px;
+    }
+
+    .elementName {
+        top: 165px;
+        font-size: 25px;
+    }
+
+    .elementType {
+        top: 145px;
+        font-size: 15px;
+    }
+
+    .card2 {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tabIcon {
+        font-size: 25px;
+    }
+
+    .tabIconName {
+        font-size: 15px;
+    }
+}
+
+
+/* Extra Small Devices (Portrait Phones & Smaller Devices) */
+@media(min-width: 320px) and (max-width:360px){
+    .cyso{
+        font-size: 20px;
+    }
+
+    #chemical{
+        font-size: 40px;
+    }
+
+    #elements{
+        font-size: 40px;
+    }
+
+    .search{
+        font-size: 20px;
+    }
+
+    .undraw {
+        height: 80px;
+    }
+
+    .card1 {
+        height: 250px;
+    }
+
+    .bgPic {
+        height: 250px;
+    }
+
+    .text {
+        top: 80px;
+    }
+
+    .elementName {
+        top: 165px;
+        font-size: 25px;
+    }
+
+    .elementType {
+        top: 145px;
+        font-size: 15px;
+    }
+
+    .card2 {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tabIcon {
+        font-size: 25px;
+    }
+
+    .tabIconName {
+        font-size: 15px;
+    }
 }

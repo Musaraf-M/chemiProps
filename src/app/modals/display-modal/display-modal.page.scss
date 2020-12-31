@@ -37,10 +37,51 @@
 }
 
 #bottomImage {
-    margin-top: 55%;
+    margin-top: 15px;
     height: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    position: relative;
+}
+
+/*==================================================
+                   Responsiveness
+===================================================*/
+/* Medium Devices (Landscape Tablets & Medium Desktops) */
+@media(min-width: 992px) and (max-width: 1199px){
+    .elementType {
+        font-size: 35px;
+    }
+ 
+    .elementName {
+        font-size: 40px;
+    }
+
+   
+}
+
+/* Small Devices (Portrait Tablets & Small Desktops) */
+@media(min-width: 768px) and (max-width: 991px){
+
+  
+
+    
+}
+
+/* Extra Small Devices (Portrait Tablets & Landscape Phones) */
+@media(min-width: 550px) and (max-width: 767px){
+    
+}
+
+/* Extra Small Devices (Portrait Phones & Smaller Devices) */
+@media(min-width: 320px) and (max-width:399px){
+   .elementType {
+       font-size: 15px;
+   }
+
+   .elementName {
+       font-size: 20px;
+   }
 }

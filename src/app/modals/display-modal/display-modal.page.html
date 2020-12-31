@@ -31,12 +31,21 @@
 
 
             <!--Element data-->
-
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste eveniet at aut sed ullam, porro, velit
-                earum atque delectus totam incidunt eos doloremque dicta quibusdam iusto quae dolores alias
-                reprehenderit facilis eligendi? Vero aliquid repellendus
-                hic natus? Consequuntur, blanditiis temporibus?</p>
-        </ion-card>
+            <div *ngFor="let x of property">
+                <p>Atomic Mass: {{x.atomicMass}}</p>
+                <p>Atomic Number: {{x.atomicNumber}}</p>
+                <p>Boiling Point: {{x.boilingPoint}}</p>
+                <p>Bond Type: {{x.bondingType}}</p>
+                <p>Density: {{x.density}}</p>
+                <p>Electron Affinity: {{x.electronAffinity}}</p>
+                <p>Electro Negativity: {{x.electronegativity}}</p>
+                <p>Configuration: {{x.electronicConfiguration}}</p>
+                <p>Ionization Energy: {{x.ionizationEnergy}}</p>
+                <p>Melting Point: {{x.meltingPoint}}</p>
+                <p>Oxidation States: {{x.oxidationStates}}</p>
+                <p>Standard State: {{x.standardState}}</p>
+        </div>
+            </ion-card>
 
     </div>
 

@@ -3,6 +3,7 @@ import { ModalController } from '@ionic/angular';
 import { HttpClient } from '@angular/common/http';
 import { IonSearchbar } from '@ionic/angular';
 import { Router } from '@angular/router';
+import { Keyboard } from '@ionic-native/keyboard/ngx';
 
 @Component({
   selector: 'app-search-model',
@@ -13,18 +14,19 @@ export class SearchModelPage implements OnInit {
 
   @ViewChild('search', { static: false }) search: IonSearchbar;
 
+
   data: any;
   private searchedItem: any = [];
   list: any;
-  constructor(public modalController: ModalController, private http: HttpClient, private router: Router) { }
+  constructor(public modalController: ModalController, private http: HttpClient, private router: Router, private keyboard: Keyboard) { }
 
   ngOnInit() {
-   let fetchRes = fetch("../../assets/data.json"); 
-   fetchRes.then(res => 
-       res.json()).then(d => { 
-           this.list = d;
-           this.searchedItem = this.list;
-  })
+    let fetchRes = fetch("../../assets/data.json");
+    fetchRes.then(res =>
+      res.json()).then(d => {
+        this.list = d;
+        this.searchedItem = this.list;
+      })
   }
 
   closeModal() {
@@ -32,9 +34,10 @@ export class SearchModelPage implements OnInit {
   }
 
 
+
   ionViewDidEnter() {
     setTimeout(() => {
-      this.search.setFocus();
+      // this.search.setFocus();
     });
   }
 
@@ -47,15 +50,19 @@ export class SearchModelPage implements OnInit {
       this.searchedItem = this.searchedItem.filter((item: any) => {
         return (item.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
       })
+      this.keyboard.hide();
     }
     // this.search.getInputElement().then(item => console.log(item))
 
 
   }
 
-  mouseClick(item1,item2,item3) {
-      this.router.navigate(['display-modal/', item1,item2,item3]);
-      this.closeModal();
-    }
-  
+  mouseClick(item1, item2, item3) {
+    
+    this.router.navigate(['display-modal/', item1, item2, item3]);
+    
+    this.closeModal();
   }
+
+
+}

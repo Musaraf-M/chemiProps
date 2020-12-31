@@ -20,16 +20,18 @@ export class DrawerComponent implements AfterViewInit {
   details:any;
   detail:any;
   data:any;
+  data2:any;
+  app:any;
 
   constructor(private route: ActivatedRoute, private http: HttpClient, private plt: Platform, private gestureCtrl: GestureController) {
     this.symbol = route.snapshot.params.symbol;
-    let fetchRes = fetch("../../assets/data.json"); 
-   fetchRes.then(res => 
-       res.json()).then(d => { 
-           this.data = d;
-           this.details = this.data.filter(d => d.symbol == this.symbol);
-           console.log(this.details);       
-  })
+
+  let fetchResult = fetch("../../assets/element_details.json"); 
+  fetchResult.then(res => 
+      res.json()).then(e => { 
+          this.data2 = e;
+          this.getData(this.symbol);
+      }) 
    }
   
   async ngAfterViewInit() {
@@ -88,6 +90,12 @@ export class DrawerComponent implements AfterViewInit {
 
   application() {
     this.value = 1;
+  }
+
+  getData(tk){
+    this.app = this.data2[tk].uses; 
+    console.log(this.app);
+    this.details = this.data2[tk].definition; 
   }
 }
 

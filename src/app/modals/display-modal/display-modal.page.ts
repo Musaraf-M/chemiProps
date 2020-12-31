@@ -11,6 +11,7 @@ export class DisplayModalPage implements OnInit {
 
   backdropVisible = false;
 
+  property: any;
   data: any;
   details: any;
   symbol: any;
@@ -19,17 +20,21 @@ export class DisplayModalPage implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router, private http: HttpClient, private changeDetectorRef: ChangeDetectorRef) {
     this.symbol = route.snapshot.params.symbol;
     this.name = route.snapshot.params.name;
-    console.log(this.name);
-
     this.groupBlock = route.snapshot.params.groupBlock;
-  }
+    let fetchRes = fetch("../../assets/data.json"); 
+   fetchRes.then(res => 
+       res.json()).then(d => { 
+           this.data = d;
+           this.property = this.data.filter(d => d.symbol == this.symbol);
+  });
+}
+
 
   ngOnInit() {
 
   }
 
   ionViewDidEnter() {
-
 
   }
 
@@ -46,4 +51,6 @@ export class DisplayModalPage implements OnInit {
     this.backdropVisible = isVisible;
     this.changeDetectorRef.detectChanges();
   }
+
+   
 }
