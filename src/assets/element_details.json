@@ -23,7 +23,8 @@
     },
     "He": {
         "definition": [
-            "Helium is named for the Greek Titan of the Sun, Helios. It was first detected as an unknown, yellow spectral line signature in sunlight, during a solar eclipse in 1868 by Georges Rayet,Captain C. T. Haig, Norman R. Pogson, and Lieutenant John Herschel, and was subsequently confirmed by French astronomer, Jules Janssen. Janssen is often jointly credited with detecting the element, along with Norman Lockyer. Janssen recorded the helium spectral line during the solar eclipse of 1868, while Lockyer observed it from Britain."
+            "Helium is named for the Greek Titan of the Sun, Helios. It was first detected as an unknown, yellow spectral line signature in sunlight, during a solar eclipse in 1868 by Georges Rayet,Captain C. T. Haig, Norman R. Pogson, and Lieutenant John Herschel, and was subsequently confirmed by French astronomer, Jules Janssen. ",
+            "Janssen is often jointly credited with detecting the element, along with Norman Lockyer. Janssen recorded the helium spectral line during the solar eclipse of 1868, while Lockyer observed it from Britain."
         ],
         "uses": [
             "The primary use of Helium goes in altitudes research and meteorological balloons.",
@@ -38,7 +39,6 @@
         "definition": [
             "Tungsten is an economically important metal, being widely used in light-bulb filaments, electron and television tubes, abrasives and special alloys such as steels tool.",
             "Tungsten carbide is of great importance to metal-works, in the mining and petroleum industries. Contamination from these sources is therefore possible in industrial and urban areas.",
-            "Evidence for a significant biological role for Tungsten is sparse, in contrast to Molybdenum, which is an essential trace element, although minor concentrations in some plants suggest a specialized function perhaps substituting for Molybdenum when there is a deficiency.",
             "There is limited ecotoxicity data available, anything higher than trace amounts of Tungsten in solution is generally considered to be toxic."
         ],
         "uses": [
@@ -190,6 +190,7 @@
     "Xe": {
         "definition": [
             "Xenon is a chemical element with symbol Xe and atomic number 54 in the periodic table.",
+            "The name Xenon is derived from a Greek word Xenos which means\u00a0\u201cstranger\u201d.",
             "It was discovered by William Ramsay in the year 1898.",
             "It is most expensive and most dense of all the gases.",
             "It produces a bluish purple colour when electrified.",
@@ -199,14 +200,14 @@
             "Xenon is a rare, colourless, odourless, tasteless and chemically unreactive gas.",
             "Xenon is a trace gas ( i.e., which makes up less than 1 % by volume of Earth\u2019s atmosphere. It is found as a component in gases released from few mineral springs.",
             "It is also released as a by-product when the air is separated into Nitrogen and Oxygen.",
-            "The element has an atomic number 54 as its nucleus contains 54 protons. It is available in all forms i.e., solids, liquids, and gases.",
-            "The name Xenon is derived from a Greek word Xenos which means\u00a0\u201cstranger\u201d."  
+            "The element has an atomic number 54 as its nucleus contains 54 protons. It is available in all forms i.e., solids, liquids, and gases."
+            
         ]
     },
     "Se": {
         "definition": [
             "Selenium is a chemical element that is placed in the oxygen group of the periodic table. It is often found in combination with metals like mercury, copper, silver or lead. It is combined with the physical properties of elements like tellurium and sulfur. This element is rare and composed of 90 parts per billion of the Earth crust. It\u2019s a non-metallic chemical element which is a member of the group 16 of the periodic table.",
-            "This element appears in different allotropic forms of which the most popular are \u2013 red amorphous powder, a gray crystalline metal, and a red crystalline material, which is known as a metallic selenium. This gray crystalline form conducts electricity much better in the light than in the dark and can be easily used in photocells. It burns in air and is unaffected by water and dissolves in concentrated nitric acid and alkalis."
+            "This element appears in different allotropic forms of which the most popular are \u2013 red amorphous powder, a gray crystalline metal, and a red crystalline material, which is known as a metallic selenium. This gray crystalline form conducts electricity much better in the light than in the dark and can be easily used in photocells."
         ],
         "uses": [
             "It serves as a decolorizer when incorporated in small amounts into the glass. When in large quantity, it imparts to glass a useful clear red color in signal lights. It is also used in preparing red enamels for steel and ceramics. And, for vulcanization of rubber to increase resistance to abrasion.Its electrical resistivity of selenium varies over a great range that depends on variables like temperature &amp; pressure, nature of the allotrope, impurities and the method of refining. Most of the metals are insoluble in this element and the impurities of a non-metallic increase the resistivity."
@@ -376,8 +377,7 @@
     "Cd": {
         "definition": [
             "Cadmium is a soft bluish-white metal with atomic number 48 and represented with the symbol Cd in the periodic table.",
-            "Cadmium is a natural element in the earth\u2019s crust. It is usually found as a mineral combined with other elements such as oxygen, chlorine, or sulfur. Most soil and rocks, including coal and mineral fertilizers, contain some cadmium. It enters the environment through wind, rain and mining operations. Volcanoes and Forest fires also release this natural element into the air.",
-            "Cadmium is the second-row transition metal belonging to group 12 of the periodic table, along with Zn and Hg. The element has an atomic number of 48, an atomic mass of 112, one main oxidation state (+2) and eight naturally occurring isotopes (106 Cd, 108 Cd and 110 Cd to 116 Cd), of which 114 Cd, 112 Cd, 111 Cd, 110 Cd and 113 Cd have abundances of 28.73%, 24.13%, 12.80%, 12.49% and 12.22% respectively (Smith 1999b). The chemistry of cadmium is most similar to that of Zn."
+            "Cadmium is a natural element in the earth\u2019s crust. It is usually found as a mineral combined with other elements such as oxygen, chlorine, or sulfur. Most soil and rocks, including coal and mineral fertilizers, contain some cadmium. It enters the environment through wind, rain and mining operations. Volcanoes and Forest fires also release this natural element into the air."
         ],
         "uses": [
             "Cadmium is used in a number of industries, such as welding and soldering, production of iron, steel and cement and production of nickel-cadmium batteries found in mobile phones and cordless equipment. The amount of cadmium is increased in the environment by forest fires and volcanoes, although the largest increase is due to the burning of fossil fuels, use of phosphate fertilizers and industrial processes.",
@@ -507,7 +507,7 @@
             "The atomic number of carbon is 6 and the atomic mass is 12.01gmol-1.",
             "Represented by the symbol C\u00a0and present\u00a0in the 14th group of elements in the Periodic Table.",
             "According to the data, it is the seventeenth most abundant element found on earth.",
-            "It is found in both free and in the combined state. You can find it available as coal, graphite in the elemental state. Whereas it is present as metal carbonates, hydrocarbons, and carbon dioxide gas in the combined state. When it combines with other elements such as dihydrogen, dioxygen, chlorine, and sulphur provides amazing arrays of materials that can vary from tissues to medicines."
+            "It is found in both free and in the combined state. You can find it available as coal, graphite in the elemental state. Whereas it is present as metal carbonates, hydrocarbons, and carbon dioxide gas in the combined state."
         ],
         "uses": [
             "One of the most amazing properties of carbon is its ability to make long carbon chains and rings. This property of carbon is known as catenation.",
@@ -830,7 +830,7 @@
     "As": {
         "definition": [
             "Arsenic, a chemical element placed in the nitrogen group of the periodic table that exists in both the gray and yellow crystalline forms. It is present in three allotropic forms- black, yellow and gray. A silver-gray and brittle crystalline solid are the stable forms. It gets tarnished rapidly when comes in contact with air and at high temperatures by preparing a white cloud of arsenic trioxide. The metallic form of the element is brittle and it gets tarnished when oxidized to arsenic trioxide. Its non-metallic form is less reactive but easily dissolves when heated with strong oxidizing acids and alkalis.",
-            "Arsenic is a steel-gray, brittle solid with low thermal and electrical conductivity. There are some forms of elemental arsenic are metal-like and is best classified as a non-metal. Some other forms are also there but are not properly characterized. This element sublimes at 613 \u00b0C and it exists as As4 molecules. It is stable in dry air and in moist air it tends to become coated with a black oxide. The sublimed arsenic vapor heated in air to form an arsenic oxide."
+            "Arsenic is a steel-gray, brittle solid with low thermal and electrical conductivity. There are some forms of elemental arsenic are metal-like and is best classified as a non-metal. Some other forms are also there but are not properly characterized."
         ],
         "uses": [
             "This element is mainly used in compounds and a smaller amount is used in alloys.",
@@ -931,7 +931,6 @@
             "Represented by the symbol \u2018Ba\u2019, Barium is a group 2 element in the periodic table with atomic number 56.",
             "Barium is a dense alkaline earth metal that occurs naturally in ore deposits and makes up 0.05% of the Earth\u2019s crust (Genter 2001). Barium and its compounds may be found in nature or produced industrially for various uses.",
             "It is a silvery-white metal that can be found in the environment, where it exists naturally. It occurs combined with other chemicals, such as carbon, oxygen,\u00a0and sulfur.",
-            "It\u00a0is very light and its density is half of that of iron.",
             "Barium oxidizes in air, reacts vigorously with water to form the hydroxide, liberating hydrogen. It reacts with almost all the non-metals, forming often poisoning compounds."
         ],
         "uses": [
@@ -1067,15 +1066,15 @@
             "It is mainly found on Earth as the water-soluble iodide in brine pools and oceans.",
             "This element gives purple color when heated.",
             "It is not completely soluble in water and dissolves in few solvents like carbon tetrachloride.",
-            "Iodine element is available naturally in air, soil, and water. The most important source of this element is oceans. There are even some minerals, which contain iodine in them.",
-            "Iodine is an essential component in humans for a proper functioning of the brain. The human body contains nearly 20 milligrams in the thyroid gland."
+            "Iodine element is available naturally in air, soil, and water. The most important source of this element is oceans. There are even some minerals, which contain iodine in them."
+           
         ],
         "uses": [
             "First commercial use of iodine is Photography. Louis Daguerre invented a technique for producing images on a piece of metal.",
             "It is used in pharmaceutical industry, printing industry and in the manufacturing of animal feed.",
             "It is also used as the water purifier.",
             "This element is used in almost all medicines that aid in cleaning wounds.",
-            "Iodine present in the air combines with water particles and get dissolved into water or soils. Plants absorb the dissolved Iodine from water and soil in the process of their growth."
+            "Iodine is an essential component in humans for a proper functioning of the brain. The human body contains nearly 20 milligrams in the thyroid gland."
         ]
     },
     "La": {
@@ -1251,7 +1250,6 @@
             "Zinc is a transition earth metal with atomic number 30 and represented in the Periodic Table with the symbol \u2018Zn\u2019",
             "Zinc is one more of those advantageous metals that we make use of daily.",
             "It is part of those elements which humans have been expanding for thousands of years.",
-            "In 1746, Marggraf secluded and defined zinc as a distinct metal.",
             "In the fourth period or row in the periodic table of elements, zinc is the last transition element.",
             "Large doses of zinc, especially when taken on an empty stomach, can cause nausea and other forms of gastrointestinal upset. Large doses of zinc can also induce a deficiency of copper and lead to overdose."
         ],
@@ -1271,15 +1269,15 @@
             "It has no colour, mostly diatomic non metal gas along with odourless and colourless in nature.",
             "Since it has five electrons in its outer shell, most of its compounds are trivalent.",
             "It is a constituent of all living tissues. Since it is a component of DNA and part of a genetic code, it is an essential element of life.",
-            "It is found in nitrates and nitrites in soil and water.",
-            "All these substances are part of the nitrogen cycle and interconnected. Industrial companies emit nitrogen extensively, increasing nitrite and nitrate content in the ground and water, being the consequence of reactions in the nitrogen cycle."
+            "It is found in nitrates and nitrites in soil and water."
+            
         ],
         "uses": [
             "It is used in the manufacture of ammonia, to produce nitric acid and subsequently used as a fertilizer.",
             "Nitric acid salts include important compounds like potassium nitrate, ammonium nitrate, and nitric acid. Nitrated organic compounds such as nitro glycerine are often explosives.",
             "Liquid nitrogen is utilized as a refrigerant for transporting foodstuff and freezing purposes. Preservation of bodies and reproductive cells and stable storage of biological samples also makes use of liquid nitrogen.",
-            "Nitrogen makes up 78 percent of the Earth \u2018s atmosphere and is a part of all living tissue. Nitrogen is a crucial ingredient of life, since it is a constituent of DNA and as such is part of the genetic code.",
-            "Nitrogen molecules often exist in soil. Nitrogen can be present in nitrates and nitrites in water and in soils. These compounds are all part of the nitrogen cycle and both are interconnected."
+            "Nitrogen makes up 78 percent of the Earth \u2018s atmosphere and is a part of all living tissue. Nitrogen is a crucial ingredient of life, since it is a constituent of DNA and as such is part of the genetic code."
+            
         ]
     },
     "Na": {
@@ -1554,7 +1552,6 @@
     },
     "Ge": {
         "definition": [
-            "Germanium, a chemical element places between silicon and tin in Group 14 of the periodic table.",
             "A hard, grey-white, lustrous and brittle metalloid acts in properties between metals and nonmetals.",
             "The element is mostly distributed in nature, but it\u2019s too reactive to occur free.",
             "Germanium has a diamond-like structure and its properties are very similar to the physical and chemical properties of silicon.",

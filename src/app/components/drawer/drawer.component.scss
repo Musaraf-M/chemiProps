@@ -1,13 +1,20 @@
-.drawer {
+.drawer{
     position: absolute;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 16px;
     width: 100%;
     border-radius: 20px;
-    bottom: calc(-77vh + env(safe-area-inset-bottom, 20px));
-    height: 83vh;
+    bottom: calc(-82vh + env(safe-area-inset-bottom, 20px));
+    height: 89vh;
     z-index: 11;
     background: rgba(245, 90, 90, 0.95);
 }
+
+.scroll {
+    overflow-y: auto;
+    height:440px;
+    width:100%;
+}
+
 
 .ion-text-center {
     text-align: center;
@@ -35,12 +42,21 @@ p {
 }
 
 ion-segemnt {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 ion-label ion-icon {
     color: blanchedalmond;
 }
+
+.upicon {
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 50px;
+    margin-top: 10px;
+    
+}
+
 
 /*==================================================
                    Responsiveness
@@ -61,5 +77,7 @@ ion-label ion-icon {
 
 /* Extra Small Devices (Portrait Phones & Smaller Devices) */
 @media(min-width: 320px) and (max-width:399px){
-    
+    p{
+        font-size: 13px;
+    }
 }

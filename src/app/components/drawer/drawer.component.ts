@@ -36,16 +36,17 @@ export class DrawerComponent implements AfterViewInit {
   
   async ngAfterViewInit() {
     const drawer = this.drawer.nativeElement;
-    this.openHeight = (this.plt.height() /100) * 65;
+    this.openHeight = (this.plt.height() /100) * 76;
 
     const gesture = await this.gestureCtrl.create({
       el:drawer,
       gestureName:'swipe',
       direction: 'y',
       onMove: ev => {
-        //console.log(ev);
+        console.log(ev);
         if (ev.deltaY < -this.openHeight) return;
         drawer.style.transform = `translateY(${ev.deltaY}px)`
+        
       },
       onEnd: ev => {
         
@@ -54,16 +55,21 @@ export class DrawerComponent implements AfterViewInit {
           drawer.style.transform = `translateY(${-this.openHeight}px)`;
           this.openState.emit(true);
           this.isOpen = true;
+          
+          
         }else if (ev.deltaY > 50 && this.isOpen){
           drawer.style.transistion = '.9s ease-out';
           drawer.style.transform = '';
           this.openState.emit(false);
           this.isOpen = false;
+          gesture.enable(true);
         }
         
       }
     });
     gesture.enable(true);
+    
+    
   }
 
   toggleDrawer() {
@@ -81,21 +87,27 @@ export class DrawerComponent implements AfterViewInit {
       this.openState.emit(false);
       this.isOpen = false;
     }   
+
+    
   }
 
-  property(){
-    this.value = 0;
-   
-  }
 
-  application() {
-    this.value = 1;
-  }
 
   getData(tk){
     this.app = this.data2[tk].uses; 
     console.log(this.app);
     this.details = this.data2[tk].definition; 
   }
+
+  segmentChanged(ev: any) {
+    if(ev.detail.value === 'property'){
+      this.value = 0;
+    }
+    else{
+      this.value = 1;
+    }
+  }
+  
+
 }
 
